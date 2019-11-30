@@ -9,7 +9,7 @@ vrs = ' Windows Edition'
 
 time.sleep(0.5)
 import os
-try:\n
+try:
  import requests
 except:
   print" Installing requests Module"
