@@ -38,8 +38,7 @@ for i in msg00:
         sys.stdout.flush()
         time.sleep(2)
 
-vers=requests.get('https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/version.txt').text.encode('utf-8')
-
+vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 #potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
 """
 ms0g ="Checking Your Version (%s) "%vers
