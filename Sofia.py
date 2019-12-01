@@ -38,7 +38,7 @@ for i in msg00:
         sys.stdout.flush()
         time.sleep(2)
 
-vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
+vers=requests.get('https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/version.txt').text.encode('utf-8')
 
 #potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
 """
@@ -48,7 +48,7 @@ for i in ms0g:
         sys.stdout.flush()
         time.sleep(0.02)
 """
-if vers=="3.6":
+if vers=="3.7":
     pass
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
@@ -111,6 +111,7 @@ while True:
     print("   7.MAIL SPAMMER")
     print("   8.HOST TO IP")
     print("   9.STEAD - DDOS (LVL 4)")
+    print("   10.CCGEN")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
