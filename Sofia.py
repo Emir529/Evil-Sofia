@@ -48,7 +48,7 @@ for i in ms0g:
         sys.stdout.flush()
         time.sleep(0.02)
 """
-if vers=="3.7":
+if vers=="3.8":
     pass
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
