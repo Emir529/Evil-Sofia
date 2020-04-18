@@ -38,7 +38,7 @@ for i in msg00:
         sys.stdout.flush()
         time.sleep(0.5)
 
-vers=requests.get('https://boghacking.com/verschk.txt').text.encode('utf-8')
+vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
 #potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
 """
@@ -48,7 +48,7 @@ for i in ms0g:
         sys.stdout.flush()
         time.sleep(0.02)
 """
-if vers=="3.8":
+if vers=="3.9":
     pass
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
