@@ -48,7 +48,7 @@ for i in ms0g:
         sys.stdout.flush()
         time.sleep(0.02)
 """
-if vers=="4.1":
+if vers=="4.1.1":
     pass
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
@@ -682,7 +682,7 @@ SSSS    TT   EEEE A  A DDD'''
 
         output = map(str, newcard)
         print "".join(output) +(otsu)
-     elif opc==11:
+    elif opc==11:
         import socket
         import subprocess
         import sys
