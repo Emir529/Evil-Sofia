@@ -14,4 +14,4 @@ MULTI_HERRAMIENTA PARA HACKING
 |Kali Linux|2020.1 | no  | testing   |
 |Parrot Security OS|-- |no  | testing   |
 |Windows|10 |no  | testing   |
-|Ubuntu|20.04 |no  | working   |
+|Ubuntu|20.04 |yes | working   |
