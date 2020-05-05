@@ -12,7 +12,7 @@ def cls():
 	os.system([linux, windows][os.name == 'nt'])
 
 
-vrs = ('MPF VERSION\n')
+vrs = ('mtpf VERSION\n')
 time.sleep(0.5)
 import os
 try:
