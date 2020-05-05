@@ -459,7 +459,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
                 print "mensaje cifrado: ",invertir(encoding)
                 print "su clave es:", clave
                 time.sleep(10)
-                ax("clear")
+                cls()
             if opcion == 2:
  
                 print"opcion de desencriptacion"
