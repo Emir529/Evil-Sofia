@@ -61,7 +61,10 @@ else:
    sys.stdout.flush()
    time.sleep(0.02)
   os.remove(sys.argv[0])
-  os.system('git clone https://github.com/emiliobog/Evil-Sofia-Linux')
+  if os.name=='nt':
+   os.system("start https://github.com/emiliobog/Evil-Sofia")
+  else:
+   os.system('git clone https://github.com/emiliobog/Evil-Sofia')
   exit()
   if os.name=='nt':
    os.system('cls')
