@@ -7,8 +7,11 @@ MULTI_HERRAMIENTA PARA HACKING
 ## DEv's:
 *   **EMILIO BARROSO** [FACEBOOK](https://www.facebook.com/peta.ftp)
 *   **EMMANUEL MILOS** [FACEBOOK](https://www.facebook.com/Emmanuel.ansioso43)
-
-### NOW EVIL-SOFIA IS A MULTIPLATFORM
-• ENJOY IT ON ALL YOUR DEVICES 
-
 *   **24/7 SUPPORT** [TELEGRAM](https://t.me/barrosoe)
+# SUPPORTED DISTRIBUTIONS
+|Distribution | Version Check | supported | status |
+----------|-------|------|-------|
+|Kali Linux|2020.1 | no  | testing   |
+|Parrot Security OS|-- |no  | testing   |
+|Windows|10 |no  | testing   |
+|Ubuntu|20.04 |no  | working   |
