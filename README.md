@@ -11,7 +11,7 @@ MULTI_HERRAMIENTA PARA HACKING
 # SUPPORTED DISTRIBUTIONS
 |Distribution | Version Check | supported | status |
 ----------|-------|------|-------|
-|Kali Linux|2020.1 | --  | testing   |
+|Kali Linux|2020.1 | yes | testing   |
 |Parrot Security OS|-- |--  | testing   |
-|Windows|10 |yes  | testing   |
+|Windows|10 |yes  | working   |
 |Ubuntu|20.04 |yes | working   |
