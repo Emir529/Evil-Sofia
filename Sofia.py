@@ -123,6 +123,7 @@ while True:
     print("   9.STEAD - DDOS (LVL 4)")
     print("   10.CCGEN")
     print("   11.PORT SCANNER ")
+    print("   12.PROXY CHECKER ")
     print("   99.Salir")
     print("")
     opc = input("  Digite el numero de la opcion: ")
@@ -738,15 +739,15 @@ SSSS    TT   EEEE A  A DDD'''
         isla=0
         saca=2
 
-        logo = '''
+        poseidon = '''
    ___  ____  _______________  ____  _  __
   / _ \/ __ \/ __/ __/  _/ _ \/ __ \/ |/ /
  / ___/ /_/ /\ \/ _/_/ // // / /_/ /    /
 /_/   \____/___/___/___/____/\____/_/|_/
 
-Proxy Checker
+Proxy Checker [IP:PORT]
         '''
-        print(logo)
+        print(poseidon)
 
         while True:
           propsi = raw_input("Proxy: ")
