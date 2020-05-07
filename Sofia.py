@@ -12,7 +12,7 @@ def cls():
 	os.system([linux, windows][os.name == 'nt'])
 
 
-vrs = ('mtpf VERSION\n')
+vrs = ('mOS VERSION\n')
 time.sleep(0.5)
 import os
 try:
@@ -46,7 +46,7 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="4.3.8":
+if vers=="4.4.9":
   print('[>] Good You have last version \n')
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
@@ -732,8 +732,43 @@ SSSS    TT   EEEE A  A DDD'''
         t2 = datetime.now()
         total =  t2 - t1
         print 'Scanning Completed in: ', total
-    elif opc==123:
-        print("BoG - TECH")
+    elif opc==12:
+        import socket
+        cls()
+        isla=0
+        saca=2
+
+        logo = '''
+   ___  ____  _______________  ____  _  __
+  / _ \/ __ \/ __/ __/  _/ _ \/ __ \/ |/ /
+ / ___/ /_/ /\ \/ _/_/ // // / /_/ /    /
+/_/   \____/___/___/___/____/\____/_/|_/
+
+Proxy Checker
+        '''
+        print(logo)
+
+        while True:
+          propsi = raw_input("Proxy: ")
+          try:
+              hostname = propsi.split(':')[0]
+              porto = propsi.split(':')[1]
+              socket.gethostbyaddr(hostname)
+              isla+=1
+              if saca==2:
+                break;
+              else:
+                pass
+          except socket.herror:
+              print ("[X] [Proxy Die] => " + hostname + ":" + porto)
+              isla+=2
+              break;
+        if isla==1:
+          print("[+] [Proxy Live] => " + hostname + ":" + porto)
+          saca+=2
+
+
+        
     elif opc==99:
         pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs 
         for i in pris:
