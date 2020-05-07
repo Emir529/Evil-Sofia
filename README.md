@@ -1,6 +1,5 @@
-# Evil-Sofia
- SoFiA extrapolation method for credit cards // Método de extrapolacion SoFiA para tarjetas de crédito
-MULTI_HERRAMIENTA PARA HACKING
+<h1 align="center">EVIL-SOFIA</h1>
+<p align="center">An open-source carding and hacking tool</p><br>
 
 [![Open Source Love](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
