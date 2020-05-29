@@ -4,7 +4,8 @@ import time
 from random import choice
 import os
 import sys
-
+import requests
+import json
 
 def cls():
 	linux = 'clear'
@@ -37,6 +38,25 @@ msg001 = ("""
                 __/ |                        
                |___/                         
 """)
+
+
+resp = requests.get("https://api.ipify.org?format=json")
+js = resp.json()
+ip = js['ip']
+
+onde = requests.get("https://ip.teoh.io/api/vpn/"+ip)
+
+skri = onde.json()
+
+esono = skri['vpn_or_proxy']
+
+if esono=="no":
+  pass
+elif esono=="yes":
+  print("[PROXY DETECTED]")
+else:
+  print("error")
+
 print(msg001)
 msg00 = "OOO\n"
 for i in msg00:
