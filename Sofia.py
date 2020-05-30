@@ -4,7 +4,6 @@ import time
 from random import choice
 import os
 import sys
-import requests
 import json
 
 def cls():
@@ -66,7 +65,7 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="4.5.9":
+if vers=="4.5.10":
   print('[>] Good You have last version \n')
 else:
  print("There is New Version available !! Do you Want To Update Your tool ? ")
