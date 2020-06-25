@@ -4,7 +4,7 @@
 ## SUPPORT:
 *   **EMILIO BARROSO** [FACEBOOK](https://www.facebook.com/peta.ftp)
 *   **EMMANUEL MILOS** [FACEBOOK](https://www.facebook.com/Emmanuel.ansioso43)
-*   **24/7 SUPPORT** [TELEGRAM](https://t.me/AdmBogRobot)
+*   **24/7 SUPPORT** [TELEGRAM](https://t.me/BARROSOE)
 # SUPPORTED DISTRIBUTIONS
 |Distribution | Version Check | supported | status |
 ----------|-------|------|-------|
