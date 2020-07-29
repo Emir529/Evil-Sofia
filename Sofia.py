@@ -14,7 +14,6 @@ def cls():
 
 vrs = ('mOS VERSION\n')
 time.sleep(0.5)
-import os
 try:
  import requests
 except:
