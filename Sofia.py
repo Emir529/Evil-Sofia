@@ -65,35 +65,14 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="4.5.10":
+if vers=="5.0.1":
   print('[>] Good You have last version \n')
 else:
- print("There is New Version available !! Do you Want To Update Your tool ? ")
- ok=raw_input('''
-    Si
-    No
-   DIGITE LA OPCION: ''')
- if ok=='si':
-  aro ="\n Update Strated !\n"
-  for i in aro:
-   sys.stdout.write(i)
-   sys.stdout.flush()
-   time.sleep(0.02)
-  os.remove(sys.argv[0])
-  if os.name=='nt':
-   os.system("start https://github.com/emiliobog/Evil-Sofia")
-  else:
-   os.system('git clone https://github.com/emiliobog/Evil-Sofia')
-  exit()
-  if os.name=='nt':
-   os.system('cls')
-  else:
-   os.system('clear')
-  os.system('LSofia.py')
- elif ok=='no':
-  pass
-
-
+  print("UPDATING EVIL-SOFIA AUTOMATICALLY\n")
+  codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
+  f = open("Sofia.py", "w")
+  f.write(codigonuevo)
+  print("SCRIPT UPDATE SUCCESSFULLY")
 ax = os.system
 cls()
 
