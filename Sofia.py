@@ -68,11 +68,10 @@ vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 if vers=="5.1.4":
     pass
 else:
-  print("UPDATE SUCCESSFULLY")
   codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
   f = open("Sofia.py", "wb")
   f.write(codigonuevo)
-
+  print("UPDATE SUCCESSFULLY")
 
 ax = os.system
 cls()
