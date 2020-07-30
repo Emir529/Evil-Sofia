@@ -7,9 +7,9 @@ import sys
 import json
 
 def cls():
-	linux = 'clear'
-	windows = 'cls'
-	os.system([linux, windows][os.name == 'nt'])
+    linux = 'clear'
+    windows = 'cls'
+    os.system([linux, windows][os.name == 'nt'])
 
 
 vrs = ('mOS VERSION\n')
@@ -65,16 +65,13 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="5.0.1":
-  print('[>] Good You have last version \n')
+if vers=="5.0.3":
 else:
-  time.sleep(2)
-  print("[>] UPDATING EVIL-SOFIA AUTOMATICALLY\n")
   codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
   f = open("Sofia.py", "w")
   f.write(codigonuevo)
-  print("SCRIPT UPDATE SUCCESSFULLY")
-  time.sleep(2)
+
+
 ax = os.system
 cls()
 
