@@ -65,7 +65,7 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="5.0.3":
+if vers=="5.1.4":
     pass
 else:
   print("UPDATE SUCCESSFULLY")
