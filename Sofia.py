@@ -69,7 +69,7 @@ if vers=="5.0.3":
     pass
 else:
   codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
-  f = open("Sofia.py", "w")
+  f = open("Sofia.py", "wb")
   f.write(codigonuevo)
 
 
@@ -94,12 +94,12 @@ if ols > "23:30":
 else:
     print (" ")
 
-print ('''
-    ___ _   _  _ _      __   __  ___ _  __   
-   | __| \ / || | |   /' _/ /__\| __| |/  \  
-   | _|`\ V /'| | |_  `._`.| \/ | _|| | /\ | 
-   |___| \_/  |_|___| |___/ \__/|_| |_|_||_|  
-''')
+
+print("    ___ _   _  _ _      __   __  ___ _  __   ")
+print("   | __| \ / || | |   /' _/ /__\| __| |/  \  ")
+print("   | _|`\ V /'| | |_  `._`.| \/ | _|| | /\ | ")
+print("   |___| \_/  |_|___| |___/ \__/|_| |_|_||_|  ")
+
 time.sleep(1.4)
 #ax("title EVIL SOFIA")
 print ("         Emmanuel Milos" + "|" + "Emilio Barroso")
