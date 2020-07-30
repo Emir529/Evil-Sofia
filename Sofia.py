@@ -74,7 +74,7 @@ else:
   f = open("Sofia.py", "w")
   f.write(codigonuevo)
   print("SCRIPT UPDATE SUCCESSFULLY")
-  .time.sleep(2)
+  time.sleep(2)
 ax = os.system
 cls()
 
