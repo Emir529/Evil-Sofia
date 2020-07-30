@@ -14,6 +14,7 @@ def cls():
 
 vrs = ('mOS VERSION\n')
 time.sleep(0.5)
+import os
 try:
  import requests
 except:
@@ -64,14 +65,16 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="5.0.1":
+if vers=="5.0.2":
   print('[>] Good You have last version \n')
 else:
-  print("UPDATING EVIL-SOFIA AUTOMATICALLY\n")
+    time.sleep(2)
+  print("[>] UPDATING EVIL-SOFIA AUTOMATICALLY\n")
   codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
   f = open("Sofia.py", "w")
   f.write(codigonuevo)
   print("SCRIPT UPDATE SUCCESSFULLY")
+  .time.sleep(2)
 ax = os.system
 cls()
 
