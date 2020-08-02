@@ -12,7 +12,7 @@
 # SUPPORTED DISTRIBUTIONS
 |Distribution | Version Check | supported | status |
 ----------|-------|------|-------|
-|Kali Linux|2020.1 | yes | yes   |
-|Parrot Security OS|-- |yes | yes   |
-|Windows|10 |yes  | yes   |
+|Kali Linux|2020.1 | yes | working   |
+|Parrot Security OS|-- |yes | working   |
+|Windows|10 |yes  | working   |
 |Ubuntu|20.04 |yes | working   |
