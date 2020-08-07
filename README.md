@@ -17,3 +17,7 @@
 |Parrot Security OS|-- |yes | working   |
 |Windows|10 |yes  | working   |
 |Ubuntu|20.04 |yes | working   |
+
+
+## DONORS
+* **DEXTRO**
