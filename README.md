@@ -1,5 +1,6 @@
 <h1 align="center">EVIL-SOFIA</h1>
 <p align="center">An open-source carding and hacking tool</p><br>
+<p align="center">WORK ON PYTHON 2.X</p><br>
 
 ## SUPPORT:
 *   **EMILIO BARROSO** [FACEBOOK](https://www.facebook.com/peta.ftp)
