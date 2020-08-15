@@ -65,7 +65,7 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="5.1.4":
+if vers=="5.2.4":
     pass
 else:
   codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
@@ -112,13 +112,13 @@ while True:
     print("      .:MENU:.")
     print("   1.EXTRAPOLADOR")
     print("   2.GENERADOR DE DNI")
-    print("   3.ATAQUE DDOS(LVL 3)")
+    print("   3.ATAQUE DDOS")
     print("   4.IBAN GEN/CHECK")
     print("   5.ENCRIPTADOR")
-    print("   6.WEB CLEANER")
+    print("   6.EXTRAPOLADOR V2 [BETA]")
     print("   7.MAIL SPAMMER")
     print("   8.HOST TO IP")
-    print("   9.STEAD - DDOS (LVL 4)")
+    print("   9.STEAD - DDOS")
     print("   10.CCGEN")
     print("   11.PORT SCANNER ")
     print("   12.PROXY CHECKER ")
@@ -508,8 +508,51 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         else:
             print("otsion no valida krnal")
     elif opc==6:
-        print ("Angel Cleaner - BoG")
-        print "https://anonfile.com/L5634b48n2/ANGEL_CLEANER_rar"
+        Bin = int(input("Digite los primeros 8 digitos del Bin: "))
+        lista = []
+        Intro = lista.append(Bin)
+
+        #Primer Bin
+        bin11 = int(input("Introduce el digito numero DIEZ del primer Bin: "))
+        if bin11 >= 0 and bin11 <= 9:
+            print("")
+        else:
+            print("Introduce un numero correcto :)")
+            bin11 = int(input("Vuelve a introducir el digito: "))
+
+        bin12 = int(input("Introduce el digito numero ONCE del primer Bin: "))
+        if bin12 >= 0 and bin12 <= 9:
+            print("")
+        else:
+            print("Introduce un numero correcto :)")
+            bin12 = int(input("Introduce el digito numero ONCE del primer Bin: "))
+
+        #Segundo Bin
+
+        bin21 = int(input("Introduce el digito numero DIEZ del segundo Bin: "))
+        if bin21 >= 0 and bin21 <=9:
+            print("")
+        else:
+            print("Introduce un numero correcto :)")
+            bin21 = int(input("Vuelve a introducir el digito: "))
+
+        bin22 = int(input("Introduce el digito numero ONCE del segundo Bin: "))
+        if bin22 >= 0 and bin22 <=9:
+            print("")
+        else:
+            print("Introduce un numero correcto :)")
+            bin22 = int(input("Introduce el digiro numero ONCE del segundo Bin: "))
+
+        A = int(bin11 + bin21 / 2) * 5
+        B = int(bin12 + bin22 / 2) * 5
+        C = A + B
+        D = (C/2)*(A+B)
+        Intro2 = lista.append(D)
+        print("Tu extrapolacion es: ")
+        time.sleep(0.8)
+        print("".join(repr(e) for e in lista))
+        print("")
+        time.sleep(2)
     elif opc==7:
         import smtplib
         import time
