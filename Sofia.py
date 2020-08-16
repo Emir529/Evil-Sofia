@@ -61,11 +61,11 @@ msg00 = "OOO\n"
 for i in msg00:
         sys.stdout.write(i)
         sys.stdout.flush()
-        time.sleep(0.5)
+        time.sleep(0.2)
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="6.0.2":
+if vers=="6.1.4":
     pass
 else:
   codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
@@ -101,7 +101,7 @@ print("   | _|`\ V /'| | |_  `._`.| \/ | _|| | /\ | ")
 print("   |___| \_/  |_|___| |___/ \__/|_| |_|_||_|  ")
 
 time.sleep(1.4)
-#ax("title EVIL SOFIA")
+
 print ("         Emmanuel Milos" + "|" + "Emilio Barroso")
 print ("              ~MULTI-HERRAMIENTA~")
 print ('''
