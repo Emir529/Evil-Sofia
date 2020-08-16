@@ -65,7 +65,7 @@ for i in msg00:
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="5.2.4":
+if vers=="6.0.2":
     pass
 else:
   codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
